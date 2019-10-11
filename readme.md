@@ -1,22 +1,7 @@
-Jupyter Notebook
-readme.md
-Last Checkpoint: Yesterday at 4:39 PM
-(autosaved)
-Current Kernel Logo
-Python 3
-File
-Edit
-View
-Insert
-Cell
-Kernel
-Widgets
-Help
-
 # Predicting Sentiment on Social Media Data Using Supervised Approaches
 ​
 Authors: [Fadhil Mochammad](https://www.github.com/fadhilmch) (fadhilm@kth.se), [M. Irfan Handarbeni](https://www.github.com/handarbeni) (handa@kth.se)
-​
+
 This project was developed as part of the [DM2583 Big Data in Media Technology](https://www.kth.se/student/kurser/kurs/DM2583?l=en) at [KTH Royal Institute of Technology](https://www.kth.se), Spring 2019
 ​
 The code is built using Keras and implemented on Jupyter Notebook.
@@ -54,13 +39,15 @@ Crawling the data from Twitter using Twitter API will be taking too much time be
 
 ### 1. Sentiment140
 Sentiment140 is a product created by Stanford University graduates. Their work allows one to discover the sentiment of brands, products, or topics on Twitter. They recorded about 1.6 million tweets in the format of polarity, id of the tweet, date of the tweet, the query, user of the tweet, and the text of the tweet. Specifically for this project, we decided to split the data into 600 thousand training data and 1 million test data\cite{sentiment140}.
-[Raw Datset](http://help.sentiment140.com/for-students)
-[Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/sentiment140-cleaned/downloads/sentiment140-cleaned.zip/1)
+Reference:
+1. [Raw Datset](http://help.sentiment140.com/for-students)
+2. [Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/sentiment140-cleaned/downloads/sentiment140-cleaned.zip/1)
 ​
 ### 2. Amazon Reviews for Sentiment Analysis
 4 million Amazon reviews split into 3.6 million for training and 400 thousand for testing purposes formatted by the polarity and the review of products from the website. Although for this project, we only used the 1.5 millions of the actual training data and split it into 500 thousand training data and 1 million test data.
-[Raw Dataset](https://www.kaggle.com/bittlingmayer/amazonreviews)
-[Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/amazon-reviews-cleaned-big-data-project/downloads/amazon-reviews-cleaned-big-data-project.zip/2)
+Reference:
+1. [Raw Dataset](https://www.kaggle.com/bittlingmayer/amazonreviews)
+2. [Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/amazon-reviews-cleaned-big-data-project/downloads/amazon-reviews-cleaned-big-data-project.zip/2)
 ​
 ## Training
 Before training, ensure that you already have the folder ~/dataset/ that contains:
@@ -71,9 +58,10 @@ Before training, ensure that you already have the folder ~/dataset/ that contain
 1. The best model for Twitter Sentiment Analysis is SVM Classifier using Linear Kernel with accuracy score 82% and AUC score 86%.
 ![SVM Classifier Result](assets/svm_result.png)
 2. Proper data pre-processing and feature extractions are needed to produce optimal and efficient model.
-3. Using trigram TF-IDF as feature extraction method performs best.![cv_vs_tfidf](assets/cv_vs_tfidf.png)
+3. Using trigram TF-IDF as feature extraction method performs best.
 ![cv_vs_tfidf](assets/cv_vs_tfidf.png)
 4. We do not manage to achieve our target to get accuracy above 90% on the Twitter dataset. On the other hand, we get above 90% accuracy on Amazon Review Dataset since it contains richer words and longer text.
 ![Perform on amazon dataset](assets/amazon_vs_twitter.png)
-5. The result of our model is above the average of other sentiment analysis systems for Twitter dataset
+5. The result of our model is above the average of other sentiment analysis systems for Twitter dataset.
+
 ​
