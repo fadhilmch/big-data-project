@@ -47,7 +47,7 @@ Here are some summary that we got from the dataset exploration:
 4. Calculate positivity and negativity of the top 5000 frequent words
     - Words such as “excited”, “amazing”, and “happy” are highly positive
     - Words such as “sick”, “sucks”, “sad”, and “ugh” are highly negative
-More detail exploratory data analysis contained in [Project_EDA.ipynb]()
+More detail exploratory data analysis contained in [Project_EDA.ipynb](project_eda.ipnyb)
 ​
 ## Dataset
 Crawling the data from Twitter using Twitter API will be taking too much time because Twitter limits the number of tweets on each API call. Also, crawling data using web-scrapping approach will also be taking a while since we have to learn the HTML structure first. Hence, due to the limited time constraint for this project assignment, we decided to utilize ready-to-use social media dataset available on the internet.
@@ -68,13 +68,12 @@ Before training, ensure that you already have the folder ~/dataset/ that contain
 2. test_cleaned_reviews.csv
 ​
 ## Result
-![SVM Classifier Result](assets/svm_result.png)
 1. The best model for Twitter Sentiment Analysis is SVM Classifier using Linear Kernel with accuracy score 82% and AUC score 86%.
-![CNN Architecture Configuration](assets/cnn_architecture.png)
+![SVM Classifier Result](assets/svm_result.png)
 2. Proper data pre-processing and feature extractions are needed to produce optimal and efficient model.
+3. Using trigram TF-IDF as feature extraction method performs best.![cv_vs_tfidf](assets/cv_vs_tfidf.png)
 ![cv_vs_tfidf](assets/cv_vs_tfidf.png)
-3. Using trigram TF-IDF as feature extraction method performs best.
-![Perform on amazon dataset](assets/amazon_vs_twitter.png)
 4. We do not manage to achieve our target to get accuracy above 90% on the Twitter dataset. On the other hand, we get above 90% accuracy on Amazon Review Dataset since it contains richer words and longer text.
+![Perform on amazon dataset](assets/amazon_vs_twitter.png)
 5. The result of our model is above the average of other sentiment analysis systems for Twitter dataset
 ​
