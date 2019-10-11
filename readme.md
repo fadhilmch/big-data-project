@@ -1,9 +1,9 @@
 # Predicting Sentiment on Social Media Data Using Supervised Approaches
 ​
-Authors: [Fadhil Mochammad](https://www.github.com/fadhilmch) (fadhilm@kth.se), [M. Irfan Handarbeni](https://www.github.com/handarbeni) (handa@kth.se)
+Authors: [Fadhil Mochammad](https://www.github.com/fadhilmch) (fadhilm@kth.se), [M. Irfan Handarbeni](https://www.github.com/handarbeni) (handa@kth.se), Mehrdad Darraji
 
-This project was developed as part of the [DM2583 Big Data in Media Technology](https://www.kth.se/student/kurser/kurs/DM2583?l=en) at [KTH Royal Institute of Technology](https://www.kth.se), Spring 2019
-​
+This project was developed as part of the [DM2583 Big Data in Media Technology](https://www.kth.se/student/kurser/kurs/DM2583?l=en) at [KTH Royal Institute of Technology](https://www.kth.se), Spring 2019  
+
 The code is built using Keras and implemented on Jupyter Notebook.
 ​
 ## Abstract
@@ -40,14 +40,14 @@ Crawling the data from Twitter using Twitter API will be taking too much time be
 ### 1. Sentiment140
 Sentiment140 is a product created by Stanford University graduates. Their work allows one to discover the sentiment of brands, products, or topics on Twitter. They recorded about 1.6 million tweets in the format of polarity, id of the tweet, date of the tweet, the query, user of the tweet, and the text of the tweet. Specifically for this project, we decided to split the data into 600 thousand training data and 1 million test data\cite{sentiment140}.
 Reference:
-1. [Raw Datset](http://help.sentiment140.com/for-students)
-2. [Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/sentiment140-cleaned/downloads/sentiment140-cleaned.zip/1)
+* [Raw Dataset](http://help.sentiment140.com/for-students)
+* [Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/sentiment140-cleaned/downloads/sentiment140-cleaned.zip/1)
 ​
 ### 2. Amazon Reviews for Sentiment Analysis
 4 million Amazon reviews split into 3.6 million for training and 400 thousand for testing purposes formatted by the polarity and the review of products from the website. Although for this project, we only used the 1.5 millions of the actual training data and split it into 500 thousand training data and 1 million test data.
 Reference:
-1. [Raw Dataset](https://www.kaggle.com/bittlingmayer/amazonreviews)
-2. [Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/amazon-reviews-cleaned-big-data-project/downloads/amazon-reviews-cleaned-big-data-project.zip/2)
+* [Raw Dataset](https://www.kaggle.com/bittlingmayer/amazonreviews)
+* [Our Cleaned Dataset](https://www.kaggle.com/fadhilmch/amazon-reviews-cleaned-big-data-project/downloads/amazon-reviews-cleaned-big-data-project.zip/2)
 ​
 ## Training
 Before training, ensure that you already have the folder ~/dataset/ that contains:
