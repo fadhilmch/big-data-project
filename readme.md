@@ -1,6 +1,6 @@
 # Predicting Sentiment on Social Media Data Using Supervised Approaches
 ​
-Authors: [Fadhil Mochammad](https://www.github.com/fadhilmch), [M. Irfan Handarbeni](https://www.github.com/handarbeni), Mehrdad Darraji
+Authors: Fadhil, [M. Irfan Handarbeni](https://www.github.com/handarbeni), Mehrdad Darraji
 
 <!-- This project was developed as part of the [DM2583 Big Data in Media Technology](https://www.kth.se/student/kurser/kurs/DM2583?l=en) at [KTH Royal Institute of Technology](https://www.kth.se), Spring 2019   -->
 
